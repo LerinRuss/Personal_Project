@@ -1,0 +1,31 @@
+plugins {
+    id 'org.springframework.boot' version '2.2.4.RELEASE'
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+}
+
+project(':Api') {
+    apply plugin: 'org.springframework.boot'
+}
+
+project(':Security') {
+
+    apply plugin: 'io.spring.dependency-management'
+    
+    dependencyManagement {
+        dependencies {
+            dependency 'org.springframework.boot:spring-boot-starter-security:2.2.5.RELEASE'
+        }
+    }
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    version = '0.1-SNAPSHOT'
+}

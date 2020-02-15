@@ -1,0 +1,18 @@
+plugins {
+    id 'application'
+}
+
+
+mainClassName = 'word_counter.api.GreetingFormatter'
+
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
+    implementation project(':Security')
+
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+}
