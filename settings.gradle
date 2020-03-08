@@ -9,5 +9,5 @@
 
 rootProject.name = 'Personal_Project'
 
-include 'Api', 'Security'
+include 'Application', 'Security'
 

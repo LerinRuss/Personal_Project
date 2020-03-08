@@ -3,7 +3,7 @@ plugins {
 }
 
 
-mainClassName = 'personal.api.GreetingFormatter'
+mainClassName = 'personal.application.GreetingFormatter'
 
 
 dependencies {
