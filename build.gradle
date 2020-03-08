@@ -1,5 +1,5 @@
 plugins {
-    id 'org.springframework.boot' version '2.2.4.RELEASE'
+    id 'org.springframework.boot' version '2.2.5.RELEASE'
 }
 
 allprojects {
@@ -11,6 +11,14 @@ allprojects {
 
 project(':Api') {
     apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+
+    dependencyManagement {
+        dependencies {
+            dependency group:'org.springframework.boot', name:'spring-boot-starter-web',      version:'2.2.5.RELEASE'
+            dependency group:'org.springframework.boot', name:'spring-boot-starter-actuator', version:'2.2.5.RELEASE'
+        }
+    }
 }
 
 project(':Security') {
@@ -19,7 +27,8 @@ project(':Security') {
     
     dependencyManagement {
         dependencies {
-            dependency 'org.springframework.boot:spring-boot-starter-security:2.2.5.RELEASE'
+            dependency group:'org.springframework.boot',     name:'spring-boot-starter-security', version:'2.2.5.RELEASE'
+            dependency group:'org.springframework.security', name:'spring-security-test',         version:'5.3.0.RELEASE'
         }
     }
 }

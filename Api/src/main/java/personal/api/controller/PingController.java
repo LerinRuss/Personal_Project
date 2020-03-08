@@ -1,4 +1,4 @@
-package word_counter.api.controller;
+package personal.api.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

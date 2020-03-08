@@ -3,7 +3,7 @@ plugins {
 }
 
 
-mainClassName = 'word_counter.api.GreetingFormatter'
+mainClassName = 'personal.api.GreetingFormatter'
 
 
 dependencies {
