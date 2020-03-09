@@ -4,12 +4,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Import;
-import personal.game.GameConfig;
+import personal.web_game.GameConfig;
 import personal.security.SecurityConfiguration;
 
 @SpringBootApplication
 @ComponentScan({
-    "personal.game"
+    "personal.web_game"
 })
 @Import({
     SecurityConfiguration.class,

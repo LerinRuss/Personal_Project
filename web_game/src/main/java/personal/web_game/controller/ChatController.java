@@ -1,10 +1,10 @@
-package personal.game.controller;
+package personal.web_game.controller;
 
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Controller;
-import personal.game.model.Message;
-import personal.game.model.OutputMessage;
+import personal.web_game.model.Message;
+import personal.web_game.model.OutputMessage;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

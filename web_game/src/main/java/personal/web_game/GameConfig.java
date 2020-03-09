@@ -1,4 +1,4 @@
-package personal.game;
+package personal.web_game;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;

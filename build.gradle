@@ -37,7 +37,7 @@ project(':security') {
     }
 }
 
-project(':game') {
+project(':web_game') {
     apply plugin: 'io.spring.dependency-management'
 
     dependencyManagement {
@@ -53,5 +53,6 @@ subprojects {
 }
 
 allprojects {
+    group 'personal'
     version '0.1-SNAPSHOT'
 }
