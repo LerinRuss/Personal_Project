@@ -3,7 +3,7 @@ package personal.game;
 import lombok.Getter;
 import lombok.Setter;
 
-public abstract class Unit {
+public class Unit {
     @Getter
     private final int player;
     @Getter
