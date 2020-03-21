@@ -1,5 +1,7 @@
 package personal.game;
 
+import personal.game.exception.GameException;
+
 import java.util.ArrayDeque;
 import java.util.Queue;
 
@@ -11,6 +13,10 @@ public class Logic {
 
 
     public Logic(Base leftBase, Base rightBase, int sizeMap) {
+        if (sizeMap % 2 != 0) {
+            throw new GameException("Map size should be even.");
+        }
+
         this.map = new Unit[sizeMap];
         deadQueue = new ArrayDeque<>(sizeMap);
         this.leftBase = leftBase;
