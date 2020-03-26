@@ -47,6 +47,16 @@ project(':web_game') {
     }
 }
 
+project(':web_socket_client') {
+    apply plugin: 'io.spring.dependency-management'
+
+    dependencyManagement {
+        dependencies {
+            dependency group:'org.springframework.boot', name:'spring-boot-starter-websocket', version:'2.2.5.RELEASE'
+        }
+    }
+}
+
 subprojects {
     apply plugin: 'java'
     apply plugin: 'io.freefair.lombok'

@@ -11,4 +11,5 @@ rootProject.name = 'Personal_Project'
 
 include 'application', 'security', 'web_game'
 include 'game'
+include 'web_socket_client'
 
