@@ -57,6 +57,16 @@ project(':web_socket_client') {
     }
 }
 
+project(':data-access') {
+    apply plugin: 'io.spring.dependency-management'
+
+    dependencyManagement {
+        dependencies {
+            dependency group:'org.springframework.data', name:'spring-data-jpa', version:'2.2.6.RELEASE'
+        }
+    }
+}
+
 subprojects {
     apply plugin: 'java'
     apply plugin: 'io.freefair.lombok'
